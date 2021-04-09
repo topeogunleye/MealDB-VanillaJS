@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
+    <title>Meal Finder</title>
+  </head>
+  <body class="bg-gray-900 text-white">
+    <div class="container m-auto max-w-3xl flex flex-col items-center justify-center text-center">
+      <h1 class="font-black text-2xl">Meal Finder</h1>
+      <div class="flex mt-2">
+        <form class="flex">
+          <input
+            type="text"
+            id="search"
+            placeholder="Search for meals or keywords"
+            class="border rounded-l"
+          />
+          <button class="search-btn border rounded-r" type="submit">
+            <i class="fas fa-search text-gray-900"></i>
+          </button>
+        </form>
+        <button class="random-btn border rounded-l" id="random">
+          <i class="fas fa-random text-gray-900"></i>
+        </button>
+      </div>
+
+      <div id="result-heading"></div>
+      <div id="meals" class="meals"></div>
+      <div id="singlemeal"></div>
+    </div>
+  </body>
+</html>
