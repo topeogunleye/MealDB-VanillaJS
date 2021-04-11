@@ -11,22 +11,27 @@
     />
     <title>Meal Finder</title>
   </head>
-  <body class="bg-gray-900 text-white">
-    <div class="container m-auto max-w-3xl flex flex-col items-center justify-center text-center">
+  <body class="bg-black text-white">
+    <div
+      class="container m-auto max-w-3xl flex flex-col items-center justify-center text-center"
+    >
       <h1 class="font-black text-2xl">Meal Finder</h1>
       <div class="flex mt-2">
-        <form class="flex">
+        <form class="flex" id="submit">
           <input
             type="text"
             id="search"
             placeholder="Search for meals or keywords"
-            class="border rounded-l"
+            class="border rounded-l sm:w-full"
           />
           <button class="search-btn border rounded-r" type="submit">
             <i class="fas fa-search text-gray-900"></i>
           </button>
         </form>
-        <button class="random-btn border rounded-l" id="random">
+        <button
+          class="random-btn border rounded cursor-pointer ml-2.5"
+          id="random"
+        >
           <i class="fas fa-random text-gray-900"></i>
         </button>
       </div>
@@ -35,5 +40,7 @@
       <div id="meals" class="meals"></div>
       <div id="singlemeal"></div>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
