@@ -28,7 +28,7 @@ function searchMeal(e) {
           mealsEL.innerHTML = data.meals.map(meal =>   `
             <div class="meal">
               <img class="meal-img" src="${meal.strMealThumb}" alt="${meal.strMeal}" >
-              <div class="meal-info" deal-mealID="${meal.idMeal}"> 
+              <div class="meal-info" data-mealID="${meal.idMeal}"> 
                 <h3>${meal.strMeal}</h3>
               </div>
             </div>
@@ -56,5 +56,10 @@ mealsEL.addEventListener('click', e => {
       return false;
     }
   })
-  
+
+  if (mealInfo) {
+    const mealID = mealInfo.getAttribute('data-mealid');
+    console.log(mealID)
+  }
+
 });
