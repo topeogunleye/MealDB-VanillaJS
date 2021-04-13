@@ -48,8 +48,16 @@ function searchMeal(e) {
 function getMealByID(mealID) {
   fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealID}`)
     .then(res => res.json())
-    .then(data => console.log(data))
+    .then(data => {
+      const meal = data.meals[0];
+      console.log(meal)
+
+      addMealToDOM(meal)
+    })
 }
+
+// Add Meal To DOM
+
 
 // Event listeners
 submit.addEventListener('submit', searchMeal);
