@@ -58,7 +58,8 @@ function getMealByID(mealID) {
 
 // Add Meal To DOM
 function addMealToDOM(meal) {
-  
+  const ingredients = [];
+
 }
 
 // Event listeners
