@@ -20,7 +20,6 @@ function searchMeal(e) {
     fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${term}`)
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
         resultHeading.innerHTML = `<h2>Search results for '${term}':</h2>`;
 
         if (data.meals === null) {
@@ -47,3 +46,15 @@ function searchMeal(e) {
 
 // Event listeners
 submit.addEventListener('submit', searchMeal);
+
+mealsEL.addEventListener('click', e => {
+  const mealInfo = e.path.find(item => {
+
+    if(item.classList) {
+      return item.classList.contains('meal-info')
+    } else {
+      return false;
+    }
+  })
+  
+});
