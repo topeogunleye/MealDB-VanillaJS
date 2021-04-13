@@ -60,6 +60,9 @@ function getMealByID(mealID) {
 function addMealToDOM(meal) {
   const ingredients = [];
 
+  for(let i = 1; i <= 20; i++) {
+    
+  }
 }
 
 // Event listeners
