@@ -32371,14 +32371,14 @@ video {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 0.625rem;
-  padding-right: 0.625rem
+  padding-right: 0.625rem;
 }
 
 .meals {
   display: grid;
   margin-top: 1.25rem;
   gap: 1.25rem;
-  grid-template-columns: repeat(4, minmax(0, 1fr))
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .meal {
@@ -32386,7 +32386,7 @@ video {
   height: 11rem;
   position: relative;
   text-align: center;
-  width: 11rem
+  width: 11rem;
 }
 
 .meal-img {
@@ -32396,7 +32396,7 @@ video {
   border-style: solid;
   border-width: 4px;
   height: 100%;
-  width: 100%
+  width: 100%;
 }
 
 .meal-info {
@@ -32416,11 +32416,65 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
-  transition-duration: 200ms
+  transition-duration: 200ms;
 }
 
-.meal:hover .meal-info{
+.meal:hover .meal-info {
   opacity: 1;
+}
+
+.single-meal-img {
+  --tw-border-opacity: 1;
+  border-color: rgba(255, 255, 255, var(--tw-border-opacity));
+  border-radius: 0.125rem;
+  border-style: solid;
+  border-width: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.875rem;
+  margin-bottom: 0.875rem;
+  width: 20rem;
+}
+
+.single-meal-info {
+  --tw-border-opacity: 1;
+  border-color: rgba(245, 158, 11, var(--tw-border-opacity));
+  border-radius: 0.25rem;
+  border-style: dashed;
+  border-width: 2px;
+  margin: 1.25rem;
+  padding: 0.75rem;
+}
+
+.single-meal-p {
+  line-height: 1.5;
+  margin: 0px;
+  letter-spacing: 0.025em;
+}
+
+.single-meal-ul {
+  padding-left: 0px;
+}
+
+.single-meal-ul-li {
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  --tw-border-opacity: 1;
+  border-color: rgba(229, 231, 235, var(--tw-border-opacity));
+  border-radius: 0.25rem;
+  border-style: solid;
+  border-width: 2px;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
+  padding: 0.25rem;
+  --tw-text-opacity: 1;
+  color: rgba(17, 24, 39, var(--tw-text-opacity));
 }
 
 @media (min-width: 640px) {
