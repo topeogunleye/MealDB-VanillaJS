@@ -32378,15 +32378,47 @@ video {
   display: grid;
   margin-top: 1.25rem;
   gap: 1.25rem;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+@media (min-width: 640px) {
+  .meals {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  .meals {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .meals {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
 }
 
 .meal {
   cursor: pointer;
-  height: 11rem;
+  height: 18rem;
   position: relative;
   text-align: center;
-  width: 11rem;
+  width: 18rem;
+}
+
+@media (min-width: 640px) {
+  .meal {
+    height: 13rem;
+    width: 13rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .meal {
+    height: 11rem;
+    width: 11rem;
+  }
 }
 
 .meal-img {
@@ -32443,7 +32475,7 @@ video {
   border-style: dashed;
   border-width: 2px;
   margin: 1.25rem;
-  padding: 0.75rem;
+  padding: 0.625rem;
 }
 
 .single-meal-p {
