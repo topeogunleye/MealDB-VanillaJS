@@ -9,4 +9,4 @@ Fetches Meals from the MealDB API
 - No use of javascript libraries
 - Fetches up to a 100 meals
 
-[live demo](https://mealddbtailwind.netlify.app/#)
+[live demo](https://mealdbtailwind.netlify.app/#)
